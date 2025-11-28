@@ -1,0 +1,6 @@
+✅ Problem 3 — Count Probes for Each Insertion
+
+For each insertion, return how many probes were required.
+
+Output:
+For each inserted key → print number of probes.
