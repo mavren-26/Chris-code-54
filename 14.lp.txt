@@ -1,0 +1,37 @@
+Problem 1 — Implement Linear Probing Hash Table with Delete Support
+Problem Statement
+
+You are given an empty hash table of size N.
+You must support three operations using linear probing:
+
+INSERT X → insert integer X into the hash table
+
+SEARCH X → return the index where X is found, otherwise return -1
+
+DELETE X → delete the value X if it exists (mark slot as deleted using a special flag)
+
+Rules:
+
+Collisions must be resolved using linear probing (i.e., try next slot).
+
+If the table is full, ignore the insert.
+
+Deleted slots should be treated as possible positions for new insertions.
+
+Print results for each SEARCH operation.
+
+Input Example
+
+7
+INSERT 10
+INSERT 20
+INSERT 17
+SEARCH 17
+DELETE 20
+SEARCH 20
+
+
+Output
+
+2
+-1

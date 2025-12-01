@@ -1,0 +1,27 @@
+✅ Problem 2 — Count Collisions Using Linear Probing
+Problem Statement
+
+You are given N integers and an empty hash table of size M.
+Insert the numbers using linear probing and report the total number of collisions that occurred during all insertions.
+
+Definition:
+
+A collision happens when the desired bucket is already occupied, and you move to the next one.
+
+Input
+
+M = 10
+Values = [12, 22, 32, 42]
+
+
+Explanation
+
+12 → index 2 → no collision
+
+22 → index 2 → collision +1
+
+32 → index 2 → collision +2
+
+42 → index 2 → collision +3
+
+Total collisions = 6
