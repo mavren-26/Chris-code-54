@@ -1,0 +1,24 @@
+PROBLEM  — String Hash Table with Chaining
+
+Problem Statement:
+Implement a hash table for string keys using chaining.
+Use the hash function:
+
+hash(s) = sum(ASCII values of characters) % size
+
+
+Support operations:
+
+insert(key)
+
+search(key)
+
+get_chain(index) → returns the bucket list
+
+Test with:
+
+insert("cat")
+insert("dog")
+insert("tiger")
+search("dog") → True
+get_chain(hash("cat"))

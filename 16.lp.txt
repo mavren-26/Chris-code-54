@@ -1,0 +1,25 @@
+PROBLEM  — Integer Hash Table with Chaining
+
+Problem Statement:
+Implement a hash table using chaining for integer keys.
+Operations to support:
+
+insert(key)
+
+search(key) → returns true/false
+
+remove(key)
+
+Use hash function:
+
+index = key % size
+
+
+Test with the following sequence:
+
+insert 15
+insert 25
+insert 35
+search 25   → True
+remove 25
+search 25   → False
