@@ -1,0 +1,53 @@
+Problem — Build & operate a Double-Hashing Hash Table (core)
+
+Description.
+Implement a hash table for integer keys using open addressing + double hashing. Support operations:
+
+INSERT x — insert integer x (ignore duplicates)
+
+DELETE x — remove integer x (if present)
+
+SEARCH x — print YES if present, otherwise NO
+
+PRINT — print table contents in index order, EMPTY for empty slots
+
+Requirements & details
+
+Use table size m (a prime number given in input). Use probing:
+
+h1(k) = k mod m (non-negative)
+
+h2(k) = 1 + (k mod (m-1)) (so second hash never 0)
+
+probe positions: (h1 + i*h2) mod m for i = 0,1,2,...
+
+Use tombstones for deletes so search/insert behave correctly.
+
+Input:
+
+First line: m n (prime m, n = number of operations)
+
+Next n lines: each operation as above
+
+Output:
+
+For each SEARCH print YES/NO
+
+For PRINT print m space-separated entries: either key or EMPTY
+
+Example input
+
+7 6
+INSERT 10
+INSERT 3
+SEARCH 10
+DELETE 10
+SEARCH 10
+PRINT
+
+
+Example output
+
+YES
+NO
+EMPTY 3 EMPTY EMPTY EMPTY EMPTY EMPTY

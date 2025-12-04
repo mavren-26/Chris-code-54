@@ -1,0 +1,28 @@
+Problem 2 — Use a custom Double-Hash set to count distinct integers online
+
+Description.
+Given a stream of integers, report the number of distinct values seen so far after each insertion. Implement the set using the double-hashing hash table from Problem 1 (i.e., no builtin set/Map for uniqueness checks).
+
+Input
+
+First line: m q (prime m; q = number of integers)
+
+Next q lines: integer x to insert and then print current distinct count.
+
+Example input
+
+11 5
+3
+7
+3
+11
+7
+
+
+Example output
+
+1
+2
+2
+3
+3
