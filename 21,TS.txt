@@ -1,0 +1,14 @@
+✅ Problem 2 — Compact Array by Removing Tombstones
+
+You are given an array containing:
+
+positive integers → active values
+
+-1 → tombstone marker
+
+Remove all tombstones and return a compacted array preserving order.
+
+✔ Example
+
+Input: [5, -1, 7, 9, -1, 3]
+Output: [5, 7, 9, 3]

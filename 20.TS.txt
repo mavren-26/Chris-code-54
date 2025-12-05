@@ -1,0 +1,17 @@
+✅ Problem 1 — Count Active Elements in a Tombstone Array
+
+You are given an array where:
+
+0 → represents empty
+
+1 → represents active element
+
+-1 → represents a tombstone (deleted element)
+
+Task:
+Count how many active elements (1) exist in the array.
+
+✔ Example
+
+Input: [1, -1, 0, 1, 1, -1]
+Output: 3
