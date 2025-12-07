@@ -1,0 +1,31 @@
+Problem 2 — Falling Tombstones (cellular fall simulation)
+
+Problem. You have tombstones arranged in a line. Each position is either standing (1) or already fallen (0). Each day, a standing tombstone will fall if the number of currently standing adjacent neighbors (left and right, count only immediate neighbors that exist and are still standing) is strictly less than a threshold T. All falls happen simultaneously each day. The process repeats until no more tombstones fall. Compute the final configuration and the number of days required to stabilize.
+
+Input.
+
+s — a string of 0 and 1 of length n (1 ≤ n ≤ 2·10^5)
+
+integer T (0 ≤ T ≤ 2)
+
+Output.
+
+final string after stabilization
+
+number of days (non-negative integer)
+
+Notes.
+
+T = 0: no standing tombstone ever falls (because neighbors < 0 never true), so 0 days.
+
+T = 1: a standing tombstone with 0 standing neighbors falls.
+
+T = 2: a standing tombstone falls if it has fewer than 2 standing neighbors (i.e., if an endpoint with one neighbor or an isolated one).
+
+Example.
+Input: s = "1101101", T = 1
+Day 1: positions with 0 standing neighbors fall → update simultaneously. Repeat until stable.
+
+Approach. Use a queue and process waves (BFS by layer). Maintain standing boolean array and cntNeighbors[i] (# of standing immediate neighbors). Initially find all indices that should fall (standing and cntNeighbors < T) and push to queue. Process the queue in rounds: each round all in queue fall simultaneously, update neighbors' cntNeighbors, if any neighbor becomes eligible (standing and cntNeighbors < T), add to next round. Count rounds.
+
+Complexity O(n).

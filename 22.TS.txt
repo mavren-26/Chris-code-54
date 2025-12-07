@@ -1,0 +1,27 @@
+Problem 1 — Tombstone Skyline (minimum removals to form a mountain)
+
+Problem. Tombstones stand in a row; each tombstone has a height. You want the remaining tombstones (after removing some) to form a strict mountain sequence: heights strictly increase up to a single peak, then strictly decrease. Find the minimum number of tombstones to remove so the remaining sequence is a strict mountain (both increasing and decreasing parts must be non-empty, i.e., the peak cannot be at an endpoint).
+
+Input.
+
+n (1 ≤ n ≤ 2·10^5) — number of tombstones
+
+array h[0..n-1] (integers, |h[i]| ≤ 10^9)
+
+Output.
+
+Minimum removals (integer). If it's impossible to form a strict mountain (e.g., n < 3), output -1.
+
+Idea. This is the classic longest bitonic subsequence problem (strict). Compute for each position i:
+
+L[i] = length of Longest Increasing Subsequence (strict) ending at i
+
+R[i] = length of Longest Increasing Subsequence (strict) starting at i when looking from right (i.e. longest decreasing subsequence starting at i)
+Then the longest strict mountain with peak at i has length L[i] + R[i] - 1 but requires L[i] >= 1 and R[i] >= 1 and also both sides non-empty: L[i] >= 2 and R[i] >= 2 (so peak isn't at an endpoint). Take max over i. Answer = n - max_len (or -1 if no valid mountain).
+
+Complexity. O(n log n).
+
+Example
+
+Input: n = 7, heights = [2, 1, 4, 7, 3, 2, 5]
+One mountain subsequence: [1,4,7,3,2] length 5 → removals = 7 - 5 = 2.
