@@ -1,6 +1,13 @@
 Problem 2 — Falling Tombstones (cellular fall simulation)
 
-Problem. You have tombstones arranged in a line. Each position is either standing (1) or already fallen (0). Each day, a standing tombstone will fall if the number of currently standing adjacent neighbors (left and right, count only immediate neighbors that exist and are still standing) is strictly less than a threshold T. All falls happen simultaneously each day. The process repeats until no more tombstones fall. Compute the final configuration and the number of days required to stabilize.
+Problem. You have tombstones arranged in a line.
+ Each position is either standing (1) or already fallen (0).
+  Each day, a standing tombstone will fall if the number of 
+  currently standing adjacent neighbors (left and right, count only 
+  immediate neighbors that exist and are still standing) is strictly 
+less than a threshold T. All falls happen simultaneously each day.
+  The process repeats until no more tombstones fall. Compute the final
+configuration and the number of days required to stabilize.
 
 Input.
 

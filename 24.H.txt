@@ -1,0 +1,16 @@
+🔹 Problem
+
+Given an integer array nums and an integer k, return the total number of continuous subarrays whose sum equals k.
+
+🔹 Key idea (Hashing)
+
+Use a prefix sum + hashmap to store how many times a prefix sum has appeared.
+
+🧠 Logic
+
+If:
+
+current_sum - k exists in hashmap
+
+
+then a subarray with sum k exists.
