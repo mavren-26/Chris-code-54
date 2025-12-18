@@ -1,0 +1,19 @@
+🔹 Problem 1: Generate All Subsets (Power Set)
+Problem Statement
+
+Given an integer array nums, return all possible subsets (the power set).
+The solution must not contain duplicate subsets.
+
+Example
+Input: [1, 2]
+Output: [[], [1], [2], [1,2]]
+
+Backtracking Idea
+
+At each index, you choose:
+
+include the current element
+
+OR skip it
+
+Recursively build subsets.
