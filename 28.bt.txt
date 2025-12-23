@@ -1,0 +1,43 @@
+📘 Problem Statement
+
+You are given an integer array nums that may contain duplicates and an integer target.
+
+Return all unique subsets such that:
+
+The sum of elements equals target
+
+Each number can be used at most once
+
+The solution set must not contain duplicate subsets
+
+Return the answer in any order.
+
+🔍 Example
+
+Input
+
+nums = [1, 2, 2, 3]
+target = 5
+
+
+Output
+
+[[1,2,2], [2,3]]
+
+
+Explanation
+
+[1,2,2] → sum = 5
+
+[2,3] → sum = 5
+Duplicates like [2,1,2] are not allowed.
+
+🧠 Approach
+
+Sort the array
+
+Use backtracking
+
+Skip duplicates using i > start && nums[i] == nums[i-1]
+
+Stop recursion when sum exceeds target

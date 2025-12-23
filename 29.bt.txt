@@ -1,0 +1,45 @@
+🔹 Problem 2: Unique Permutations With Fixed Positions Blocked
+📘 Problem Statement
+
+You are given:
+
+An integer array nums with duplicates
+
+A boolean array blocked of the same length
+
+Generate all unique permutations of nums such that:
+
+If blocked[i] == true, the element at index i cannot be changed
+
+Non-blocked positions can be freely permuted
+
+Return unique permutations only
+
+🔍 Example
+
+Input
+
+nums = [1, 1, 2]
+blocked = [true, false, false]
+
+
+Output
+
+[[1,1,2], [1,2,1]]
+
+
+Explanation
+
+Index 0 is fixed as 1
+
+Remaining [1,2] are permuted uniquely
+
+🧠 Approach
+
+Keep blocked positions fixed
+
+Backtrack only on free indices
+
+Use a used[] array
+
+Skip duplicates using sorting + pruning
