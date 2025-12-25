@@ -1,0 +1,20 @@
+Problem 1 — Longest Palindromic Substring
+Problem Statement
+
+Given a string s, return the longest palindromic substring in s.
+A string is a palindrome if it reads the same forward and backward.
+If multiple answers exist, return any one of them.
+
+Examples
+Input: s = "babad"
+Output: "bab"
+Explanation: "aba" is also valid
+
+Input: s = "cbbd"
+Output: "bb"
+
+Constraints
+
+1 ≤ s.length ≤ 2000
+
+s consists of lowercase English letters

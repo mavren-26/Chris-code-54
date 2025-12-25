@@ -24,7 +24,7 @@ void backtrack(vector<int>& freeNums, vector<bool>& used,
         path.push_back(freeNums[i]);
         backtrack(freeNums, used, path, fixed, blocked, res);
         path.pop_back();
-        used[i] = false;
+        used[i] = false;    
     }
 }
 
