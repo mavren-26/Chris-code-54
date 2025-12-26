@@ -1,0 +1,23 @@
+Problem 2 — Count Substrings That Are Palindromes
+Problem Statement
+
+Given a string s, return the number of palindromic substrings in it.
+
+A substring is palindromic if it reads the same forward and backward.
+
+Two substrings are counted separately if they start or end at different positions.
+
+Examples
+Input: s = "aaa"
+Output: 6
+Explanation:
+"a","a","a","aa","aa","aaa"
+
+Input: s = "abc"
+Output: 3
+
+Constraints
+
+1 ≤ s.length ≤ 2000
+
+s consists of lowercase English letters
