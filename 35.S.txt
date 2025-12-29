@@ -1,0 +1,66 @@
+🧩 Problem 2 — Count Lexicographically Valid Splits
+Problem Statement
+
+You are given a non-empty string s.
+You must split the string into two non-empty parts at an index i such that:
+
+left = s[0..i-1]
+right = s[i..n-1]
+
+
+A split is considered valid if:
+
+left <= right   (lexicographically)
+
+
+Return the number of valid splits.
+
+Constraints
+
+2 ≤ s.length ≤ 2000
+
+s consists of lowercase English letters
+
+Example 1
+
+Input
+
+abcd
+
+
+Output
+
+3
+
+
+Explanation
+Splits:
+
+a | bcd → valid
+
+ab | cd → valid
+
+abc | d → valid
+
+All 3 are valid.
+
+Example 2
+
+Input
+
+caa
+
+
+Output
+
+1
+
+
+Explanation
+Splits:
+
+c | aa → invalid
+
+ca | a → valid
+
+So answer = 1

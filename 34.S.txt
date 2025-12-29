@@ -1,0 +1,50 @@
+🧩 Problem 1 — Lexicographically Smallest Single-Cut Rotation
+Problem Statement
+
+You are given a string s consisting of lowercase English letters.
+You are allowed to choose exactly one index i (where 0 ≤ i < len(s)) and rotate the string by moving the substring s[i:] to the front, followed by s[:i].
+
+Formally, the rotated string becomes:
+
+s[i:] + s[:i]
+
+
+Your task is to return the lexicographically smallest possible string obtainable using exactly one such rotation (including the case i = 0, which leaves the string unchanged).
+
+Constraints
+
+1 ≤ s.length ≤ 2000
+
+s contains only lowercase English letters
+
+Example 1
+
+Input
+
+bca
+
+
+Output
+
+abc
+
+
+Explanation
+Rotations:
+
+i = 0 → bca
+
+i = 1 → cab
+
+i = 2 → abc ← smallest
+
+Example 2
+
+Input
+
+aaaa
+
+
+Output
+
+aaaa

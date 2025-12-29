@@ -11,4 +11,4 @@ def countSubstrings(s: str) -> int:
     for i in range(len(s)):
         ans += expand(i, i)     # odd
         ans += expand(i, i + 1) # even
-    return ans
+    return ans 
