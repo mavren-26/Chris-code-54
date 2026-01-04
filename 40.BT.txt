@@ -1,0 +1,19 @@
+Problem — Restore Balanced Parentheses
+Problem Statement
+
+You are given an integer n. Return all valid strings of length 2n that contain exactly:
+
+n opening parentheses '('
+
+n closing parentheses ')'
+
+A string is valid if at no point do closing parentheses exceed opening ones.
+
+Return the result in lexicographical order.
+
+Example
+Input: n = 2
+Output: ["(())","()()"]
+
+Constraints
+1 ≤ n ≤ 10
