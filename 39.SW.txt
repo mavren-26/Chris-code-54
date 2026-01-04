@@ -1,0 +1,24 @@
+Problem — Sum of All Nice Subarrays
+Problem Statement
+
+You are given an integer array nums and an integer k.
+
+A subarray is called nice if the sum of its elements is strictly less than k.
+
+Return the total number of nice subarrays.
+
+Constraints
+1 ≤ nums.length ≤ 10^5
+-10^4 ≤ nums[i] ≤ 10^4
+k can be negative
+
+
+Note: Array may contain negative numbers — still solve in O(n).
+
+Examples
+Input: nums = [1,2,3], k = 5
+Output: 4
+Explanation: [1], [2], [3], [1,2]
+
+Input: nums = [-1, -1, 2], k = 2
+Output: 6
