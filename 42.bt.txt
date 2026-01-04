@@ -1,0 +1,20 @@
+Problem — Word Path in a Grid
+Problem Statement
+
+You are given a m x n grid of lowercase letters and a string word.
+
+Return true if the word can be constructed by moving up, down, left, or right, without using the same cell twice.
+
+Otherwise return false.
+
+Example
+Grid:
+A B C
+D E F
+word = "ABE"
+
+Output: true
+
+Constraints
+1 ≤ m,n ≤ 6
+1 ≤ len(word) ≤ 10
