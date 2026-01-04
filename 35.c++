@@ -14,8 +14,9 @@ int countValidSplits(string s) {
 }
 
 int main() {
-    string s;
+    string s;   
     cin >> s;
     cout << countValidSplits(s);
     return 0;
 }
+ 

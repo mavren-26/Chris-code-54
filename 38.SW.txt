@@ -1,0 +1,20 @@
+Problem  — Minimum Distinct Count Window
+Problem Statement
+
+You are given an integer array nums and an integer k.
+
+Find the minimum number of distinct integers present in any contiguous subarray of length k.
+
+Return that minimum.
+
+Constraints
+1 ≤ nums.length ≤ 10^5
+1 ≤ k ≤ nums.length
+
+Examples
+Input: nums = [1,2,2,3,3,3], k = 3
+Output: 1
+Explanation: window [3,3,3]
+
+Input: nums = [5,5,4,6,4], k = 2
+Output: 1

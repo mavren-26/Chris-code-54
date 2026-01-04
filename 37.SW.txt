@@ -1,0 +1,23 @@
+Problem  — Balanced Vowel Window
+Problem Statement
+
+You are given a string s consisting of lowercase English letters and an integer k.
+
+A substring is called vowel-balanced if in that substring the number of vowels
+(a, e, i, o, u) is exactly equal to the number of consonants.
+
+Return the length of the longest substring whose length is at most k and is vowel-balanced.
+
+If no such substring exists, return 0.
+
+Constraints
+1 ≤ s.length ≤ 10^5
+1 ≤ k ≤ s.length
+
+Examples
+Input: s = "leetcode", k = 6
+Output: 4
+Explanation: "leet" → 2 vowels, 2 consonants
+
+Input: s = "abc", k = 2
+Output: 0
