@@ -40,3 +40,25 @@ public:
         if (pos != -1) table[pos] = -2;
     }
 };
+//driver code  
+int main() {
+    HashLP h(7);   // hash table of size 7
+
+    // Insert keys
+    h.insertKey(10);
+    h.insertKey(20);
+    h.insertKey(5);
+    h.insertKey(15);
+
+    // Search keys
+    cout << "Searching 10 -> index " << h.searchKey(10) << endl;
+    cout << "Searching 5  -> index " << h.searchKey(5) << endl;
+    cout << "Searching 99 -> index " << h.searchKey(99) << endl;
+
+    // Delete a key
+    h.deleteKey(10);
+
+    cout << "Searching 10 after deletion -> index " << h.searchKey(10) << endl;
+
+    return 0;
+}
