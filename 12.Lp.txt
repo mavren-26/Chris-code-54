@@ -1,4 +1,4 @@
-✅ Problem 2 — Delete From Linear Probing (Use Lazy Deletion)
+✅ Problem 2 — Delete From Linear Probing.
 
 Implement a hash table with:
 
@@ -6,4 +6,4 @@ Insert
 
 Search
 
-Delete using a dummy value (e.g., -2) to mark “deleted”.
+Delete using a dummy value (e.g., -2) to mark “deleted”
