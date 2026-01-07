@@ -14,6 +14,6 @@ def countNiceSubarrays(nums, k):
 
     return ans
 # Example usage:
-nums = [1, 2, 3, 4, 5]
+nums = [1, 2, 3, 4, 5,6,7]
 k = 5
 print(countNiceSubarrays(nums, k))  # Output: 9
