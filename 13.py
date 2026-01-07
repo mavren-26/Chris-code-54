@@ -18,4 +18,4 @@ def count_probes(arr, n):
 
     return result
 
-print(count_probes([10, 20, 30, 25, 35], 10))
+print(count_probes([10, 20, 30, 25, 30], 10))
