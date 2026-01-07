@@ -14,5 +14,5 @@ def generateParenthesis(n):
     backtrack("", 0, 0)
     return ans
 # Example usage:
-n = 3   
+n = 5
 print(generateParenthesis(n)) 

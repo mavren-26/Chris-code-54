@@ -21,7 +21,7 @@ function exist(board, word) {
 
     return false;
 }
-// Example usage:
+// Example usage:   
 const board = [
     ['A','B','C','E'],
     ['S','F','C','S'],
