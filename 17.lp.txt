@@ -21,4 +21,5 @@ insert("cat")
 insert("dog")
 insert("tiger")
 search("dog") → True
-get_chain(hash("cat"))
+get_chain(hash("cat")
+solve  this problem .

@@ -4,3 +4,4 @@ For each insertion, return how many probes were required.
 
 Output:
 For each inserted key → print number of probes.
+solve  this problem 
