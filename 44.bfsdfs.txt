@@ -1,0 +1,33 @@
+PROBLEM 2: Network Infection with Safe Zones
+
+(BFS for infection time + DFS for safe component validation)
+
+Problem Statement
+
+You are given an undirected graph with N nodes representing computers.
+
+Some nodes are initially infected
+
+Infection spreads to all neighbors each minute
+
+Some nodes are marked as safe servers
+
+A safe zone is a connected component made entirely of safe servers.
+
+Rules:
+
+If infection reaches any node of a safe zone, the entire zone fails
+
+Otherwise, the safe zone survives
+
+Task:
+
+Return the number of safe zones that fully survive.
+
+💡 Approach
+
+BFS from infected nodes → compute infection time for every node
+
+DFS to explore safe components
+
+If any node in a component has finite infection time → discard zone

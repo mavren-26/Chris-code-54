@@ -22,6 +22,9 @@ long long countNiceSubarrays(vector<int>& nums, long long k) {
 int main() {
     vector<int> nums = {1, 2, 3, 4, 5,6,7};
     long long k = 5;
-    cout << countNiceSubarrays(nums, k) << endl;  // Output: 9
-    return 0;
-}
+    cout << countNiceSubarrays(nums, k) << endl;  // Output: 9r
+    return 0; 
+    
+} 
+ 
+     

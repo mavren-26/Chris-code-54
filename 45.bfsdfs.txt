@@ -1,0 +1,26 @@
+PROBLEM 3: Time-Locked Rooms in a Building
+
+(BFS for unlock times + DFS for reachability)
+
+Problem Statement
+
+You have N rooms connected by corridors (undirected graph).
+
+Each room i unlocks at time unlock[i]
+
+You start at room 0 at time 0
+
+Moving between rooms takes 1 unit time
+
+You may wait inside rooms
+
+Task:
+
+Determine whether you can reach room N-1.
+
+Approach
+
+BFS → compute earliest arrival times
+
+DFS → verify a valid path respecting unlock times
+
